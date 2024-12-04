@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td.label {
+            width: 200px;
+        }
+
+        input.medium {
+            width: 400px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td style="width: 50%;"><img src="images/tablaperiodica.png" alt="logo" width="200"></td>
+                <td><h1>Tienda de elementos</h1></td>
+            </tr>
+        </table> 
+    </header>
+
+    <br>
+    <hr>
+    <br>
+
+    <form>
+        <table>
+            <tr>
+                <td class="label" rowspan="2"><h3>Nombre Completo:</h3></td>
+                <td><label for="nombres">Nombres:</label></td>
+                <td><label for="apellidos">Apellidos:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nombres" name="nombres"></td>
+                <td><input type="text" id="apellidos" name="apellidos"></td>
+            </tr>
+            <tr>
+                <td class="label" rowspan="2"><h3>Compañia:</h3></td>
+                <td colspan="2"><input class="medium" type="text" id="Compañia" name="Compañia"></td>
+            </tr>
+        </table>
+
+    </form>
+
+
+    <br><br><br>
+    <table>
+        <tr>
+            <th>
+                <a href="index.html">Regresar</a>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
