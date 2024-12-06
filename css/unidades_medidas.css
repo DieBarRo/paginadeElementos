@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+/* :root {
+    font-size: 30px;
+} */
+
+.medida1 {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    font-size: 1lh;
+}
+
+.medida2 {
+    border: 1px solid black;
+    width: 5cm;
+    height: 1in;
+    font-size: 10px;
+}
+
+.medida3 {
+    border: 1px solid black;
+    width: 5cm;
+    height: 1in;
+    font-size: 8px;
+}
+
+.medida4 {
+    border: 1px solid black;
+    width: 5cm;
+    height: 1in;
+    font-size: 6px;
+}
+
+.medida5 {
+    border: 1px solid black;
+    width: 5cm;
+    height: 1in;
+    font-size: 4px;
+}
+
+.contenedor {
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+}
+
+.hijo {
+    border: 1px solid black;
+    width: 20%;
+    height: 10%;
+}
