@@ -1,0 +1,85 @@
+a {
+    color:#222;
+    padding: 8px;
+    background: #bbb;
+    transition: 
+    all 0.5s linear;
+}
+
+a:hover {
+    background: #fff;
+    color: #666;
+    padding: 25px;
+    border: 1px solid #888;
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; */
+    transition: all 0.5s linear;
+}
+
+.load {
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 40px;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.load:hover {
+    width: 2px;
+    transition: width 2s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 10px;
+    animation: change-color 5s linear infinite, move-right 4s linear infinite;
+}
+
+@keyframes change-color {
+    0% {background-color: blue;}
+    25% {background-color: green;}
+    50% {background-color: yellow;}
+    75% {background-color: orange;}
+    100% {background-color: red;}
+}
+
+@keyframes move-right {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(200px);}
+}
+
+.animacion2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    background-color: blue;
+    margin-top: 10px;
+    animation: move-right 5s linear 0s infinite,   /* Comienza a los 0s (no hay anterior) */
+                   look-up 2.5s linear 5s infinite,    /* Comienza a los 5s (5 de la anterior) */
+                   move-left 5s linear 7.5s infinite,  /* Comienza a los 7.5s (5 + 2.5 de la anterior) */
+                   dissapear 3s linear 9.5s infinite;  /* Comienza a los 9.5s (5 + 2.5 + 2 de la anterior) */
+}
+
+@keyframes move-right {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(200px); }
+    100% { transform: translateY(-100px);}
+}
+
+/* @keyframes look-up {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-100px); }
+}
+
+@keyframes move-left {
+    0% { transform: translateX(200px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes dissapear {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+} */
